@@ -38,13 +38,19 @@ try{
     // prepara a execucão da query SQL acima
     $comando = $con->prepare($sql);
 
+    // executa o comando com a query do banco de dados
     $comando -> execute();
     
     // exibe msg de sucesso ao inserir
     echo "cadastro realizado com sucesso";
 
+    // fechar a conexão
+    $con = null;
+
 
 }catch(PDOException $erro){
+    echo $erro -> getMessage();
+    die();
 
 }
 
