@@ -33,3 +33,22 @@
     border-radius: 3px;
     font-weight: bold;
 }
+
+/* css gerenciar viagens */
+
+#container-vi{
+    border: 2px solid black;
+    height: auto;
+    padding: 20px;
+}
+
+#container-vi h3{
+    text-align: center;
+}
+
+#tabela{
+    display: grid;
+    justify-items: center;
+}
+
+/* css alterar viagens */

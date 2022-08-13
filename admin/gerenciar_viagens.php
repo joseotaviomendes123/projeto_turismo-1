@@ -31,13 +31,13 @@ try{
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Gerenciar Imagens</title>
+    <title>Gerenciar Viagens</title>
 </head>
 <body>
-    <div id="container">
+    <div id="container-vi">
         <h3>Gerenciar Viagens</h3>
         <div id="tabela">
-            <table border ="1">
+            <table border ="2">
                 <tr>
                     <th>ID</th>
                     <th>Título</th>
@@ -54,10 +54,12 @@ try{
                     <td><?php echo $viagem['local'];?></td>
                     <td>R$ <?php echo $viagem['valor'];?></td>
                     <td><?php echo $viagem['desc'];?></td>
-                    <td>Alterar</th>
+                    <td>
+                        <a href="alterar_viagens.php?id=<?php echo $viagem['id'];?>">Alterar</a>
+                    </td>
                     <td>
                         <a href="../backend/_deletar_viagens.php?id=<?php echo $viagem['id'];?>"> Deletar</a>
-                    </th>
+                    </td>
                 </tr>
                 <?php endforeach;?>
             </table>
