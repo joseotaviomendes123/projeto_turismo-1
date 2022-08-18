@@ -36,6 +36,13 @@ try{
 <body>
     <div id="container-vi">
         <h3>Gerenciar Viagens</h3>
+
+        <hr>
+
+        <a href="cadastrar_viagens.html">cadastrar viagens</a>
+
+        <hr>
+
         <div id="tabela">
             <table border ="2">
                 <tr>

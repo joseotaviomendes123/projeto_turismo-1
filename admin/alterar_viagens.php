@@ -45,6 +45,13 @@
 <body>
     <div id="container-al">
         <h3>Alterar Viagens</h3>
+
+        <hr>
+
+        <a href="gerenciar_viagens.php">Gerenciar Viagens</a>
+
+        <hr>
+
         <form action="../backend/_alterar_viagens.php" method="post">
             <div id="grid-alterar">
                 <div>
